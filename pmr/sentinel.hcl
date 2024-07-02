@@ -15,6 +15,6 @@ module "tfrun-functions" {
 }
 
 policy "require-all-resources-from-pmr" {
-    source = "./require-all-resources-from-pmr.sentinel"
+    source = "./pmr.sentinel"
     enforcement_level = "advisory"
 }
