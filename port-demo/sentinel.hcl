@@ -33,7 +33,7 @@ policy "restrict-current-ec2-instance-type" {
 ##
 policy "restrict-ingress-sg-rule-cidr-blocks" {
   source = "./restrict-ingress-sg-rule-cidr-blocks.sentinel"
-  enforcement_level = "soft-mandatory"
+  enforcement_level = "hard-mandatory"
 }
 ##
 policy "restrict-ingress-sg-rule-ssh" {
