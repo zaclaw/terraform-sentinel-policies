@@ -16,27 +16,27 @@ module "aws-functions" {
 ##
 policy "check-ec2-environment-tag" {
   source = "./check-ec2-environment-tag.sentinel"
-  enforcement_level = "soft-mandatory"
+  enforcement_level = "advisory"
 }
 
 ##
 policy "require-most-recent-AMI-version" {
   source = "./require-most-recent-AMI-version.sentinel"
-  enforcement_level = "soft-mandatory"
+  enforcement_level = "advisory"
 }
 
 ##
 policy "restrict-current-ec2-instance-type" {
   source = "./restrict-current-ec2-instance-type.sentinel"
-  enforcement_level = "soft-mandatory"
+  enforcement_level = "advisory"
 }
 ##
 policy "restrict-ingress-sg-rule-cidr-blocks" {
   source = "./restrict-ingress-sg-rule-cidr-blocks.sentinel"
-  enforcement_level = "soft-mandatory"
+  enforcement_level = "advisory"
 }
 ##
 policy "restrict-ingress-sg-rule-ssh" {
   source = "./restrict-ingress-sg-rule-ssh.sentinel"
-  enforcement_level = "soft-mandatory"
+  enforcement_level = "advisory"
 }
